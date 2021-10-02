@@ -4,6 +4,8 @@ from dataanalysis import analysisfactory
 
 c = analysisfactory.AnalysisFactory.get_by_name('ii_spectra_extract')
 
-c.__class__.fullbkg=True
+class ii_spectra_extract(c.__class__):
+    fullbkg=True
+
 #c.promote()
 
